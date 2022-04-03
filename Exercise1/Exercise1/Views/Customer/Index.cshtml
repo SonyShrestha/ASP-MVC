@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Exercise1.Models.Customer>
+@{
+    ViewBag.Title = "Customer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Customer</h2>
+
+<table>
+    <tr>
+        <th>
+            Customer Name
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+        </tr>
+    }
+</table>
+
